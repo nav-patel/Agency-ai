@@ -27,7 +27,7 @@ const Navbar = ({theme , setTheme}) => {
         <div className='flex items-center gap-2 sm:gap-4'>
 
 
-          <ThemeToggleBtn/>
+          <ThemeToggleBtn theme={theme} setTheme={setTheme}/>
 
             <img src={theme === 'dark ' ? assets.menu_icon_dark : assets.menu_icon}   alt="" onClick={()=>setSidebarOpen(true)} className='w-8 sm:hidden'/>
 
