@@ -13,7 +13,9 @@ import Footer from "./components/Footer"
 
 const App = () => {
 
+  
   const [theme , setTheme] = useState(localStorage.getItem('theme') ? localStorage.getItem('theme') : 'light')
+
 
   return (
     <div className='dark:bg-black relative'>
@@ -26,7 +28,7 @@ const App = () => {
     <Teams/>
     <ContactUs/>
     <Footer theme={theme} />
-    
+
     </div>
   )
 }
